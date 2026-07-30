@@ -1,0 +1,68 @@
+--------Guía Rápida: Cómo subir tu código a GitHub con Git------
+
+Esta guía te ayudará a conectar tu trabajo local en Visual Studio con tu vitrina profesional en GitHub. Sigue estos pasos para guardar y publicar tu progreso
+
+.0. Configuración Inicial (Solo la primera vez)
+
+Antes de empezar, Git necesita saber quién eres. Abre la terminal en VS Code y ejecuta estos comandos (reemplaza los datos entre comillas):
+git config --global user.email "tu_email@ejemplo.com"
+git config --global user.name "Tu Nombre"
+
+
+
+
+1. Preparar tu carpeta local
+
+Asegúrate de estar dentro de la carpeta de tu proyecto en la terminal de VS Code. 
+
+- clic derecho dentro de la carpeta del proyecto
+-dale clic a "OPEN GIT BASH HERE"
+
+-Inicia el control de versiones: git init
+Esto crea una "caja de herramientas" oculta dentro de tu carpeta para rastrear cambios.2. Conectar con GitHub
+
+
+
+
+
+
+
+
+
+
+2. Ve a tu cuenta de GitHub, crea un repositorio y copia el enlace (URL). Luego, conéctalo en tu terminal:
+
+git remote add origin [PEGAR_AQUÍ_EL_LINK_DE_TU_REPOSITORIO]
+
+
+
+
+
+
+
+
+3. Subir tus cambios (El flujo diario)
+
+Cada vez que hagas avances significativos en tu código, sigue esta secuencia:
+Preparar archivos: Agrega todos los archivos nuevos o modificados al "escenario de espera".
+
+-git add .
+
+
+-Crear el punto de control (Commit): Guarda una "foto" de tu trabajo actual con un mensaje descriptivo.
+git commit -m "Descripción breve de lo que cambiaste"
+
+
+-Asegurar la rama: Si es tu primera vez, asegúrate de estar en la rama principal.
+git branch -M main
+
+
+
+
+
+
+
+4. Publicar en la nube (Push): Envía todo a GitHub.
+git push -u origin main
+
+¡Listo! Ahora tu código está seguro en la nube. Recuerda ejecutar el paso 3 cada vez que termines una tarea o funcionalidad nueva. ¡Buen trabajo!
